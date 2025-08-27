@@ -1,79 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Get 128.88 Free Credits</title>
   <style>
+    :root { --overlay: rgba(0,0,0,.55); }
+    * { box-sizing: border-box; }
     body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background: url(https://github.com/zackthomas3344/casino-landing/blob/main/background.png?raw=true) no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
+      margin: 0; font-family: Arial, sans-serif; color: #fff; background: #0b0b1a;
+    }
+    /* Full-screen hero with background image */
+    .hero {
+      position: relative;
+      min-height: 90vh;
+      display: grid;
+      place-items: center;
+      padding: 48px 20px;
       text-align: center;
+      background: url("./background.png") center/cover no-repeat fixed;
+      /* fallback if fixed isn’t desired on mobile: remove “fixed” */
     }
-    header {
-      padding: 60px 20px 20px;
-      background: rgba(0, 0, 0, 0.5); /* transparent dark overlay for readability */
+    /* dark overlay for readability */
+    .hero::before {
+      content: "";
+      position: absolute; inset: 0; background: var(--overlay);
     }
-    header h1 {
-      font-size: 2rem;
-      color: #ffdd33;
-      margin: 0;
+    .hero > .content {
+      position: relative;  /* sits above overlay */
+      max-width: 900px;
     }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-    }
+    h1 { margin: 0 0 10px; font-size: clamp(28px, 5vw, 44px); color: #ffdd33; }
+    .sub { font-size: clamp(16px, 3.5vw, 20px); opacity: .95; }
+
     .cta-btn {
-      display: inline-block;
-      margin: 30px auto;
-      padding: 15px 30px;
-      font-size: 1.2rem;
-      font-weight: bold;
-      background: linear-gradient(90deg, #ff33aa, #ffdd33);
-      color: #000;
-      border: none;
-      border-radius: 50px;
-      text-decoration: none;
-      transition: transform 0.2s ease;
+      display: inline-block; margin: 28px auto 0; padding: 14px 28px;
+      font-weight: 700; font-size: 18px; text-decoration: none; color: #000;
+      background: linear-gradient(90deg,#ff33aa,#ffdd33);
+      border-radius: 999px; transition: transform .2s ease;
     }
-    .cta-btn:hover {
-      transform: scale(1.05);
-    }
+    .cta-btn:hover { transform: scale(1.05); }
+
     .features {
-      margin: 30px 20px;
-      font-size: 1.1rem;
-      background: rgba(0, 0, 0, 0.5);
-      padding: 20px;
-      border-radius: 10px;
+      margin: 24px auto 0; display: grid; gap: 6px; font-size: 18px;
     }
+
     footer {
-      margin-top: 40px;
-      padding: 20px;
-      font-size: 0.8rem;
-      background: rgba(0, 0, 0, 0.8);
-      color: #ccc;
+      text-align: center; padding: 18px 16px; font-size: 13px;
+      background: #111; color: #ccc;
+    }
+
+    /* small screens */
+    @media (max-width: 480px) {
+      .features { font-size: 16px; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>🎰 Get 128.88 Free Credits 🎉</h1>
-    <p>Start your slot adventure today! Join our community and spin the reels.</p>
-  </header>
+  <section class="hero">
+    <div class="content">
+      <h1>🎰 Get 128.88 Free Credits 🎉</h1>
+      <p class="sub">Start your slot adventure today! Join our community and spin the reels.</p>
+      <a class="cta-btn" href="https://t.me/YOURTELEGRAMGROUP" target="_blank" rel="noopener">👉 Join Telegram Group</a>
 
-  <main>
-    <a href="https://t.me/nextlevel_88" class="cta-btn" target="_blank">👉 Join Telegram Group</a>
-
-    <div class="features">
-      <p>🔥 Vegas-style slots on your phone</p>
-      <p>🎁 Free 128.88 credits for new players</p>
-      <p>⚡ Fun & Free-to-Play Entertainment</p>
+      <div class="features">
+        <div>🔥 Vegas-style slots on your phone</div>
+        <div>🎁 Free 128.88 credits for new players</div>
+        <div>⚡ Fun & Free-to-Play Entertainment</div>
+      </div>
     </div>
-  </main>
+  </section>
 
   <footer>
     ⚠️ This game is intended for players <strong>18+ only</strong>.<br>
@@ -82,5 +78,3 @@
   </footer>
 </body>
 </html>
-
-
